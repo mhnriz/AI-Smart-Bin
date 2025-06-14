@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['battery', 'cardboard', 'glass', 'metal', 'plastic']
+
+roboflow:
+  workspace: tranngocnhan
+  project: recycle-trash-yolo-v8
+  version: 44
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/tranngocnhan/recycle-trash-yolo-v8/dataset/44
