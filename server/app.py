@@ -10,7 +10,9 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Load trained model
-model = YOLO("C:/Users/Hariz/Downloads/hackathon x entreprenuership/sketch_jun13b/best.pt")  
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "models", "best.pt")
+model = YOLO(MODEL_PATH)
 
 @app.route('/upload', methods=['POST'])
 def classify_image():

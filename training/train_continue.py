@@ -1,10 +1,14 @@
+import os
 from ultralytics import YOLO
 
-# Load the model from a previous checkpoint (e.g., best.pt or last.pt)
-model = YOLO('runs/detect/train/weights/best.pt')  # or 'last.pt'
+if __name__ == "__main__":
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    CHECKPOINT_PATH = os.path.join(BASE_DIR, 'runs', 'detect', 'train', 'weights', 'best.pt')
+    DATA_PATH = os.path.join(BASE_DIR, 'data.yaml')
+    model = YOLO(CHECKPOINT_PATH) 
 
-# Continue training
-model.train(
-    data='path/to/data.yaml',   # same YAML you used before
-    resume=True                 # this is important!
-)
+    # Continue training
+    model.train(
+        data=DATA_PATH,   # same YAML variable (no quotes!)
+        resume=True       # this is important!
+    )

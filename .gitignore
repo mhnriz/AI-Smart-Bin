@@ -2,6 +2,7 @@ __pycache__/
 *.py[cod]
 venv/
 *.pt
+!server/models/best.pt
 *.weights
 server/received/
 .build/
