@@ -1,8 +1,8 @@
 # **AI Smart Bin: Automated Waste Classifier**
 <div align="center">
 
-![Last Commit](https://img.shields.io/github/last-commit/hariz/ai-smart-bin?style=for-the-badge&color=3498DB)
-![Repo Size](https://img.shields.io/github/repo-size/hariz/ai-smart-bin?style=for-the-badge&color=2ECC71)
+![Last Commit](https://img.shields.io/github/last-commit/mhnriz/ai-smart-bin?style=for-the-badge&color=3498DB)
+![Repo Size](https://img.shields.io/github/repo-size/mhnriz/ai-smart-bin?style=for-the-badge&color=2ECC71)
 <br />
 ![Platform](https://img.shields.io/badge/Platform-ESP32--CAM-E74C3C?style=for-the-badge)
 ![Language](https://img.shields.io/badge/Language-C++%20%26%20Python-3498DB?style=for-the-badge)
